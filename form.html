@@ -8,13 +8,22 @@
     <title>html form</title>
 </head>
 
-<body>
-    <a href="index.html">Index</a>
+<body style="background-color: LAVENDER">
+    <h1> Some little test</h1>
+    <h2> We will find the best place to go on a trip</h2>
+    <nav>
+        <ul>
+            <li><mark><a href="index.html">MyForm</a></mark></li>
+        </ul>
+        </nav>
     <section>
-        <h2>Formochka</h2>
-        <form action="https://formspree.io/ulya0301@gmail.com" method="POST">
-            <label for="namename">Name</label>
-            <input type="text" placeholder="name" id="namename" name="namename" required>
+        <h3> Let`s give some information about you</h3>
+        <hr>
+        <form method="POST" action="https://formspree.io/ulya0301@gmail.com" >
+            <label>
+                Name: <input type="text" placeholder="namename" name="namename">
+            </label>
+            
             <br>
             <label>
                 Email: <input type="email" placeholder="Email" name="email">
@@ -25,20 +34,60 @@
             <label><input type="radio" value="female" name="gender">Female</label>
             <label><input type="radio" value="other" name="gender">Other</label>
             <br>
-            <label>
-                  Your comment:
-                  <br>
-                  <textarea name="textarea"></textarea>
-                  
-              </label>
+            
+             <br>
+            <label>Type of rest you prefer:</label>
+            <label><input type="radio" value="forest" name="type">Forests</label>
+            <label><input type="radio" value="sea" name="type">Sea</label>
+            <label><input type="radio" value="mountien" name="type">Mountiens</label>
             <br>
+            
+             <br>
+            <label>Hotel *: </label>
+            <label><input type="radio" value="5" name="hotel">5 *</label>
+            <label><input type="radio" value="4" name="hotel">4 *</label>
+            <label><input type="radio" value="3" name="hotel">3 *</label>
+            <br>
+            
+             <br>
+            <label> Sea: </label>
+            <label><input type="radio" value="Black" name="Sea">Black sea</label>
+            <label><input type="radio" value="Red" name="Sea">Red sea</label>
+            <label><input type="radio" value="Dead" name="Sea">Dead sea</label>
+            <br>
+            
+    
+             <label>Transport: </label>
+            <label><input type="checkbox" value="Traine" name="Transport">Traine</label>
+            <label><input type="checkbox" value="Bus" name="Transport">Bus</label>
+            <label><input type="checkbox" value="airplaine" name="Transport">Airplane</label>
+            <br>
+            <br>
+             <label> <input type="color" name="favcolor" value="#ff0000">Choose your favorite color </label>
+            <br>
+            <br>
+            <label>Birthday:</label>
+              <input type="date" name="bday">
+              <br>
+              <br>
+              <label>Mounth to travel: </label>
+              <select name="Mounth to travel">
+                <option value="volvo">May</option>
+                <option value="saab">June</option>
+                <option value="fiat">July</option>
+                <option value="audi">August</option>
+                <option value="saab">September</option>
+                <option value="fiat">October</option>
+                <option value="audi">November</option>
+              </select>
+              <br><br>
             <input type="submit">
             <input type="reset">
 
         </form>
     </section>
 
-    </form>
+   
 </body>
 
 </html>
